@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Your Shortlist | Per Square Feet</title>
+  <meta name="description" content="Your saved residences, compared side by side — location, price, size, lifestyle, verification and indicative metrics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body data-page="saved">
+  <a href="#main" class="eyebrow skip-link sr-only">Skip to content</a>
+
+  <header class="site-header" data-site-header data-over-hero="false">
+    <div class="nav-row">
+      <a href="index.html" class="brand eyebrow">Per Square Feet</a>
+      <nav aria-label="Primary" class="nav-links">
+          <a href="index.html" class="eyebrow link-underline" data-nav-link="home">Home</a>
+          <a href="properties/index.html" class="eyebrow link-underline" data-nav-link="properties">Properties</a>
+          <a href="neighbourhoods/index.html" class="eyebrow link-underline" data-nav-link="neighbourhoods">Neighbourhoods</a>
+          <a href="investment.html" class="eyebrow link-underline" data-nav-link="investment">Investment</a>
+          <a href="ai-lifestyle.html" class="eyebrow link-underline" data-nav-link="ai-lifestyle">AI Lifestyle</a>
+          <a href="about.html" class="eyebrow link-underline" data-nav-link="about">About</a>
+      </nav>
+      <div class="nav-secondary">
+          <a href="signin.html" class="eyebrow link-underline" data-nav-link="signin">Sign in</a>
+          <a href="saved.html" class="eyebrow link-underline" data-nav-link="saved">Saved<span data-saved-count></span></a>
+          <a href="contact.html" class="eyebrow link-underline" data-nav-link="contact">Contact</a>
+      </div>
+      <button type="button" class="mobile-toggle" data-mobile-toggle aria-label="Menu">Menu</button>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <nav aria-label="Mobile">
+            <a href="index.html" class="eyebrow" data-nav-link="home">Home</a>
+            <a href="properties/index.html" class="eyebrow" data-nav-link="properties">Properties</a>
+            <a href="neighbourhoods/index.html" class="eyebrow" data-nav-link="neighbourhoods">Neighbourhoods</a>
+            <a href="investment.html" class="eyebrow" data-nav-link="investment">Investment</a>
+            <a href="ai-lifestyle.html" class="eyebrow" data-nav-link="ai-lifestyle">AI Lifestyle</a>
+            <a href="about.html" class="eyebrow" data-nav-link="about">About</a>
+            <a href="signin.html" class="eyebrow" data-nav-link="signin">Sign in</a>
+            <a href="saved.html" class="eyebrow" data-nav-link="saved">Saved</a>
+            <a href="contact.html" class="eyebrow" data-nav-link="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="shell" style="padding-top:9rem;padding-bottom:7rem;">
+      <div style="display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:1.5rem;">
+        <div>
+          <p class="eyebrow text-gold">Shortlist</p>
+          <h1 class="display-lg" style="margin-top:1.5rem;">Your shortlist.</h1>
+        </div>
+        <button type="button" class="eyebrow link-underline text-muted hidden" data-saved-clear>Clear all</button>
+      </div>
+
+      <div data-saved-empty class="hidden" style="padding:7rem 0;">
+        <p class="body-lede" style="max-width:28rem;">Nothing saved yet. Save a residence from the collection and it will appear here for comparison.</p>
+        <a href="properties/index.html" class="btn-base btn-solid" style="margin-top:2.5rem;display:inline-flex;">Explore properties</a>
+      </div>
+
+      <div data-saved-content class="hidden">
+        <div class="grid-3" style="margin-top:4rem;" data-saved-cards></div>
+
+        <section class="hairline-top" style="margin-top:7rem;padding-top:3.5rem;">
+          <h2 class="display-md">Compare.</h2>
+          <div class="compare-table-wrap">
+            <table class="compare-table">
+              <caption class="sr-only">Comparison of saved residences</caption>
+              <thead><tr data-saved-table-head></tr></thead>
+              <tbody data-saved-table-body></tbody>
+            </table>
+          </div>
+          <p style="margin-top:2rem;font-size:.75rem;color:var(--muted-foreground);">Indicative figures are illustrative and do not represent guaranteed returns.</p>
+          <div style="margin-top:2.5rem;display:flex;flex-wrap:wrap;gap:1rem;">
+            <a href="contact.html" class="btn-base btn-solid">Request a private viewing</a>
+            <a href="https://wa.me/919625225069" target="_blank" class="btn-base btn-outline">Speak to an advisor</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div>
+          <p class="eyebrow">Per Square Feet</p>
+          <p class="footer-tagline">Curated second homes.<br />Considered ownership.</p>
+        </div>
+        <nav aria-label="Explore" class="footer-links">
+            <a href="properties/index.html">Properties</a>
+            <a href="neighbourhoods/index.html">Neighbourhoods</a>
+            <a href="investment.html">Investment</a>
+            <a href="ai-lifestyle.html">AI Lifestyle</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="owner-community.html">Owner Community</a>
+        </nav>
+        <div class="footer-links">
+        
+         
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Per Square Feet</p>
+        <div class="footer-bottom-links">
+          <span>Privacy</span>
+          <span>Terms</span>
+          <span>Disclaimer</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/site-data.js"></script>
+  <script src="js/saved.js"></script>
+  <script src="js/property-card.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/saved-page.js"></script>
+
+</body>
+</html>

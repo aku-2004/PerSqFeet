@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Ownership Calculators | Per Square Feet</title>
+  <meta name="description" content="Indicative calculators for second-home ownership: investment viability with the Oasis Number, rental yield and loan repayment estimates." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body data-page="investment">
+  <a href="#main" class="eyebrow skip-link sr-only">Skip to content</a>
+
+  <header class="site-header" data-site-header data-over-hero="true">
+    <div class="nav-row">
+      <a href="index.html" class="brand eyebrow">Per Square Feet</a>
+      <nav aria-label="Primary" class="nav-links">
+          <a href="index.html" class="eyebrow link-underline" data-nav-link="home">Home</a>
+          <a href="properties/index.html" class="eyebrow link-underline" data-nav-link="properties">Properties</a>
+          <a href="neighbourhoods/index.html" class="eyebrow link-underline" data-nav-link="neighbourhoods">Neighbourhoods</a>
+          <a href="investment.html" class="eyebrow link-underline is-active" data-nav-link="investment">Investment</a>
+          <a href="ai-lifestyle.html" class="eyebrow link-underline" data-nav-link="ai-lifestyle">AI Lifestyle</a>
+          <a href="about.html" class="eyebrow link-underline" data-nav-link="about">About</a>
+      </nav>
+      <div class="nav-secondary">
+          <a href="signin.html" class="eyebrow link-underline" data-nav-link="signin">Sign in</a>
+          <a href="saved.html" class="eyebrow link-underline" data-nav-link="saved">Saved<span data-saved-count></span></a>
+          <a href="contact.html" class="eyebrow link-underline" data-nav-link="contact">Contact</a>
+      </div>
+      <button type="button" class="mobile-toggle" data-mobile-toggle aria-label="Menu">Menu</button>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <nav aria-label="Mobile">
+            <a href="index.html" class="eyebrow" data-nav-link="home">Home</a>
+            <a href="properties/index.html" class="eyebrow" data-nav-link="properties">Properties</a>
+            <a href="neighbourhoods/index.html" class="eyebrow" data-nav-link="neighbourhoods">Neighbourhoods</a>
+            <a href="investment.html" class="eyebrow" data-nav-link="investment">Investment</a>
+            <a href="ai-lifestyle.html" class="eyebrow" data-nav-link="ai-lifestyle">AI Lifestyle</a>
+            <a href="about.html" class="eyebrow" data-nav-link="about">About</a>
+            <a href="signin.html" class="eyebrow" data-nav-link="signin">Sign in</a>
+            <a href="saved.html" class="eyebrow" data-nav-link="saved">Saved</a>
+            <a href="contact.html" class="eyebrow" data-nav-link="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero-dark">
+      <div class="shell">
+        <p class="eyebrow text-light">Perspective</p>
+        <h1 class="display-lg" style="max-width:36rem;">Own beautifully.<br />Think clearly.</h1>
+        <p style="margin-top:2rem;max-width:32rem;color:color-mix(in oklch, var(--primary-foreground) 70%, transparent);">
+          Second homes can be emotional purchases. We help you evaluate them with both lifestyle and financial considerations.
+        </p>
+      </div>
+    </section>
+
+    <div class="shell" style="padding-top:3.5rem;">
+      <div class="tab-row" role="tablist" aria-label="Calculators">
+        <button type="button" class="tab-btn is-active" role="tab" data-calc-tab="investment">Investment Calculator</button>
+        <button type="button" class="tab-btn" role="tab" data-calc-tab="yield">Rental Yield Calculator</button>
+        <button type="button" class="tab-btn" role="tab" data-calc-tab="loan">Loan Repayment Calculator</button>
+      </div>
+    </div>
+
+    <!-- Investment calculator -->
+    <div class="shell calc-grid" data-calc-panel="investment">
+      <div class="reveal">
+        <p class="eyebrow text-gold">The estimator</p>
+        <div style="margin-top:2.5rem;">
+          <div class="slider-row">
+            <div class="top-row"><span class="eyebrow text-muted">Purchase price</span><span data-inv-price-display></span></div>
+            <input type="range" min="2" max="25" step="0.05" value="4.75" data-inv-price />
+          </div>
+          <div class="grid-2" style="grid-template-columns:1fr 1fr;margin-top:2.5rem;">
+            <label class="block"><span class="eyebrow">Location</span><select class="field" data-inv-location></select></label>
+            <label class="block"><span class="eyebrow">Property type</span><select class="field" data-inv-type></select></label>
+          </div>
+          <div class="slider-row">
+            <div class="top-row"><span class="eyebrow text-muted">Holding period</span><span data-inv-holding-display></span></div>
+            <input type="range" min="3" max="20" step="1" value="7" data-inv-holding />
+          </div>
+          <div class="slider-row">
+            <div class="top-row"><span class="eyebrow text-muted">Rental Days</span><span data-inv-rental-display></span></div>
+            <input type="range" min="0" max="70" step="1" value="30" data-inv-rental />
+          </div>
+          <div class="slider-row">
+            <div class="top-row"><span class="eyebrow text-muted">Expected Rate of Appreciation</span><span data-inv-appreciation-display></span></div>
+            <input type="range" min="3" max="14" step="1" value="8" data-inv-appreciation />
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal calc-result" data-delay="120">
+        <p class="eyebrow text-gold">Estimated ownership profile</p>
+        <p class="headline" data-inv-purchase-value></p>
+        <p class="eyebrow text-muted" style="margin-top:.5rem;">Purchase value</p>
+        <span class="gold-rule" style="margin-top:2rem;"></span>
+        <dl>
+          <div class="fact-row"><dt>Estimated annual ownership cost</dt><dd data-inv-ownership-cost></dd></div>
+          <div class="fact-row"><dt>Short-term rental nights</dt><dd data-inv-nights></dd></div>
+          <div class="fact-row"><dt>Potential annual rental income</dt><dd data-inv-rental-income></dd></div>
+          <div class="fact-row"><dt>Gross rental yield</dt><dd data-inv-gross-yield></dd></div>
+          <div class="fact-row"><dt>Net carry after ownership cost</dt><dd data-inv-net-carry></dd></div>
+          <div class="fact-row"><dt>5-year indicative value</dt><dd data-inv-5yr></dd></div>
+          <div class="fact-row"><dt data-inv-hold-label>Value at 7 years</dt><dd data-inv-hold-value></dd></div>
+        </dl>
+
+        <div class="oasis-box">
+          <p class="eyebrow text-muted">The Oasis Number</p>
+          <p class="score"><span data-inv-oasis>7.0</span><span> / 10</span></p>
+          <div class="bar"><span class="bar-fill" data-inv-oasis-bar style="width:70%"></span></div>
+          <p class="verdict" data-inv-verdict></p>
+          <p class="note">The Oasis Number is a single objective read on viability, from 1 to 10 — the higher the number, the more viable the ownership case. It weighs your expected rate of appreciation, the net carry after annual ownership costs, the gross rental yield at your chosen rental days, and the rental resilience of the property type. A high number means the property is likely to hold its own financially; a low number means the case rests mainly on how much you will use and enjoy it.</p>
+        </div>
+
+        <p class="calc-disclaimer">Indicative and illustrative only. Figures are model outputs based on the assumptions you have selected and do not represent guaranteed returns, rental income or resale values. Please seek independent financial and legal advice.</p>
+        <div class="calc-ctas">
+          <a href="contact.html" class="btn-base btn-solid">Speak to an advisor</a>
+          <a href="properties/index.html" class="btn-base btn-outline">Understand the opportunity</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Yield calculator -->
+    <div class="shell calc-grid hidden" data-calc-panel="yield">
+      <div class="reveal">
+        <p class="eyebrow text-gold">Rental yield</p>
+        <div style="margin-top:2.5rem;">
+          <div class="slider-row">
+            <div class="top-row"><span class="eyebrow text-muted">Purchase price</span><span data-yld-price-display></span></div>
+            <input type="range" min="2" max="25" step="0.05" value="4.75" data-yld-price />
+          </div>
+          <div class="slider-row">
+            <div class="top-row"><span class="eyebrow text-muted">Average nightly rate</span><span data-yld-nightly-display></span></div>
+            <input type="range" min="4000" max="90000" step="500" value="18000" data-yld-nightly />
+          </div>
+          <div class="slider-row">
+            <div class="top-row"><span class="eyebrow text-muted">Rental Days</span><span data-yld-rental-display></span></div>
+            <input type="range" min="0" max="70" step="1" value="30" data-yld-rental />
+          </div>
+          <div class="slider-row">
+            <div class="top-row"><span class="eyebrow text-muted">Annual ownership cost</span><span data-yld-cost-display></span></div>
+            <input type="range" min="0.4" max="3" step="0.1" value="1.4" data-yld-cost />
+          </div>
+        </div>
+      </div>
+      <div class="reveal calc-result" data-delay="120">
+        <p class="eyebrow text-gold">Indicative yield</p>
+        <p class="headline" data-yld-net-yield></p>
+        <p class="eyebrow text-muted" style="margin-top:.5rem;">Net yield per annum</p>
+        <span class="gold-rule" style="margin-top:2rem;"></span>
+        <dl>
+          <div class="fact-row"><dt>Nights rented</dt><dd data-yld-nights></dd></div>
+          <div class="fact-row"><dt>Gross rental income</dt><dd data-yld-gross></dd></div>
+          <div class="fact-row"><dt>Net income after costs</dt><dd data-yld-net></dd></div>
+          <div class="fact-row"><dt>Gross yield</dt><dd data-yld-gross-yield></dd></div>
+        </dl>
+        <p class="calc-disclaimer">Illustrative only. Assumes a 28% deduction for platform, housekeeping and management costs on gross rental income.</p>
+      </div>
+    </div>
+
+    <!-- Loan calculator -->
+    <div class="shell calc-grid hidden" data-calc-panel="loan">
+      <div class="reveal">
+        <p class="eyebrow text-gold">Loan repayment</p>
+        <div style="margin-top:2.5rem;">
+          <div class="slider-row">
+            <div class="top-row"><span class="eyebrow text-muted">Purchase price</span><span data-loan-price-display></span></div>
+            <input type="range" min="2" max="25" step="0.05" value="4.75" data-loan-price />
+          </div>
+          <div class="slider-row">
+            <div class="top-row"><span class="eyebrow text-muted">Down payment</span><span data-loan-down-display></span></div>
+            <input type="range" min="10" max="90" step="1" value="30" data-loan-down />
+          </div>
+          <div class="slider-row">
+            <div class="top-row"><span class="eyebrow text-muted">Interest rate</span><span data-loan-rate-display></span></div>
+            <input type="range" min="6" max="14" step="0.1" value="8.5" data-loan-rate />
+          </div>
+          <div class="slider-row">
+            <div class="top-row"><span class="eyebrow text-muted">Tenure</span><span data-loan-tenure-display></span></div>
+            <input type="range" min="5" max="30" step="1" value="20" data-loan-tenure />
+          </div>
+        </div>
+      </div>
+      <div class="reveal calc-result" data-delay="120">
+        <p class="eyebrow text-gold">Monthly commitment</p>
+        <p class="headline" data-loan-emi></p>
+        <p class="eyebrow text-muted" style="margin-top:.5rem;">Estimated monthly instalment</p>
+        <span class="gold-rule" style="margin-top:2rem;"></span>
+        <dl>
+          <div class="fact-row"><dt>Loan amount</dt><dd data-loan-principal></dd></div>
+          <div class="fact-row"><dt>Total interest payable</dt><dd data-loan-interest></dd></div>
+          <div class="fact-row"><dt>Total outflow over tenure</dt><dd data-loan-total></dd></div>
+        </dl>
+        <p class="calc-disclaimer">Illustrative only. Actual rates, eligibility, processing charges and taxes vary by lender.</p>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div>
+          <p class="eyebrow">Per Square Feet</p>
+          <p class="footer-tagline">Curated second homes.<br />Considered ownership.</p>
+        </div>
+        <nav aria-label="Explore" class="footer-links">
+            <a href="properties/index.html">Properties</a>
+            <a href="neighbourhoods/index.html">Neighbourhoods</a>
+            <a href="investment.html">Investment</a>
+            <a href="ai-lifestyle.html">AI Lifestyle</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="owner-community.html">Owner Community</a>
+        </nav>
+        <div class="footer-links">
+        
+      
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Per Square Feet</p>
+        <div class="footer-bottom-links">
+          <span>Privacy</span>
+          <span>Terms</span>
+          <span>Disclaimer</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/site-data.js"></script>
+  <script src="js/saved.js"></script>
+  <script src="js/property-card.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/investment.js"></script>
+
+</body>
+</html>

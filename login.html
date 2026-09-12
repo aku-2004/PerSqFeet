@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Log In | Per Square Feet</title>
+  <meta name="description" content="Log in to your Per Square Feet account to view your shortlist, viewing requests and ownership information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body data-page="login">
+  <a href="#main" class="eyebrow skip-link sr-only">Skip to content</a>
+
+  <header class="site-header" data-site-header data-over-hero="false">
+    <div class="nav-row">
+      <a href="index.html" class="brand eyebrow">Per Square Feet</a>
+      <nav aria-label="Primary" class="nav-links">
+          <a href="index.html" class="eyebrow link-underline" data-nav-link="home">Home</a>
+          <a href="properties/index.html" class="eyebrow link-underline" data-nav-link="properties">Properties</a>
+          <a href="neighbourhoods/index.html" class="eyebrow link-underline" data-nav-link="neighbourhoods">Neighbourhoods</a>
+          <a href="investment.html" class="eyebrow link-underline" data-nav-link="investment">Investment</a>
+          <a href="ai-lifestyle.html" class="eyebrow link-underline" data-nav-link="ai-lifestyle">AI Lifestyle</a>
+          <a href="about.html" class="eyebrow link-underline" data-nav-link="about">About</a>
+      </nav>
+      <div class="nav-secondary">
+          <a href="signin.html" class="eyebrow link-underline" data-nav-link="signin">Sign in</a>
+          <a href="saved.html" class="eyebrow link-underline" data-nav-link="saved">Saved<span data-saved-count></span></a>
+          <a href="contact.html" class="eyebrow link-underline" data-nav-link="contact">Contact</a>
+      </div>
+      <button type="button" class="mobile-toggle" data-mobile-toggle aria-label="Menu">Menu</button>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <nav aria-label="Mobile">
+            <a href="index.html" class="eyebrow" data-nav-link="home">Home</a>
+            <a href="properties/index.html" class="eyebrow" data-nav-link="properties">Properties</a>
+            <a href="neighbourhoods/index.html" class="eyebrow" data-nav-link="neighbourhoods">Neighbourhoods</a>
+            <a href="investment.html" class="eyebrow" data-nav-link="investment">Investment</a>
+            <a href="ai-lifestyle.html" class="eyebrow" data-nav-link="ai-lifestyle">AI Lifestyle</a>
+            <a href="about.html" class="eyebrow" data-nav-link="about">About</a>
+            <a href="signin.html" class="eyebrow" data-nav-link="signin">Sign in</a>
+            <a href="saved.html" class="eyebrow" data-nav-link="saved">Saved</a>
+            <a href="contact.html" class="eyebrow" data-nav-link="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="auth-grid">
+      <div class="auth-form-col">
+        <div class="shell reveal" style="max-width:36rem;">
+          <p class="eyebrow text-gold">Log in</p>
+          <h1 class="display-lg" style="margin-top:1.5rem;">Your spaces.<br />Your journey.</h1>
+          <span class="gold-rule" style="margin-top:2rem;"></span>
+
+          <div data-auth-form-wrap>
+            <div class="auth-method-row">
+              <button type="button" class="eyebrow link-underline is-active" data-auth-method="phone">Phone</button>
+              <button type="button" class="eyebrow link-underline" data-auth-method="email">Email</button>
+            </div>
+
+            <form data-fake-form="auth" style="margin-top:2.5rem;display:flex;flex-direction:column;gap:2rem;">
+              
+              <label class="block">
+                <span class="eyebrow" data-auth-field-label>Mobile number</span>
+                <input required class="field" type="tel" data-auth-field placeholder="+91" />
+              </label>
+              <button type="submit" class="btn-base btn-solid" style="align-self:flex-start;">Continue</button>
+            </form>
+
+            <div style="margin-top:3rem;">
+              <p class="eyebrow text-muted">Or continue with</p>
+              <div class="auth-providers">
+                <button type="button" class="btn-base btn-outline" data-auth-provider>Google</button>
+                <button type="button" class="btn-base btn-outline" data-auth-provider>Apple</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden" data-fake-form-success="auth" style="margin-top:3rem;border:1px solid var(--hairline);padding:2rem;">
+            <p class="eyebrow text-gold">Code sent</p>
+            <p style="margin-top:1rem;font-size:.875rem;color:var(--muted-foreground);">Sample flow — authentication is not yet connected. Your shortlist is kept on this device in the meantime.</p>
+            <a href="saved.html" class="eyebrow link-underline" style="margin-top:1.5rem;display:inline-block;">View your shortlist</a>
+          </div>
+
+          <p style="margin-top:3.5rem;font-size:.75rem;color:var(--muted-foreground);">After signing in you'll find your saved properties, shortlists, viewing requests, advisor conversations, documents and ownership information here.</p>
+          <a href="signin.html" class="eyebrow link-underline" style="margin-top:1.5rem;display:inline-block;">New here? Sign in</a>
+        </div>
+      </div>
+
+      <div class="auth-art">
+        <img src="assets/cat-mountains.jpg" alt="" loading="lazy" />
+        <p class="eyebrow" style="position:absolute;bottom:2.5rem;left:2.5rem;color:color-mix(in oklch, var(--primary-foreground) 70%, transparent);">Curated • Verified • Advisory-led</p>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div>
+          <p class="eyebrow">Per Square Feet</p>
+          <p class="footer-tagline">Curated second homes.<br />Considered ownership.</p>
+        </div>
+        <nav aria-label="Explore" class="footer-links">
+            <a href="properties/index.html">Properties</a>
+            <a href="neighbourhoods/index.html">Neighbourhoods</a>
+            <a href="investment.html">Investment</a>
+            <a href="ai-lifestyle.html">AI Lifestyle</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="owner-community.html">Owner Community</a>
+        </nav>
+        <div class="footer-links">
+          
+       
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Per Square Feet</p>
+        <div class="footer-bottom-links">
+          <span>Privacy</span>
+          <span>Terms</span>
+          <span>Disclaimer</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/site-data.js"></script>
+  <script src="js/saved.js"></script>
+  <script src="js/property-card.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/nav.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll("[data-auth-method]");
+      const fieldLabel = document.querySelector("[data-auth-field-label]");
+      const field = document.querySelector("[data-auth-field]");
+      const providerButtons = document.querySelectorAll("[data-auth-provider]");
+      const form = document.querySelector('[data-fake-form="auth"]');
+      const success = document.querySelector('[data-fake-form-success="auth"]');
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          buttons.forEach((b) => b.classList.toggle("is-active", b === btn));
+          const method = btn.getAttribute("data-auth-method");
+          if (method === "phone") {
+            fieldLabel.textContent = "Mobile number";
+            field.type = "tel";
+            field.placeholder = "+91";
+          } else {
+            fieldLabel.textContent = "Email address";
+            field.type = "email";
+            field.placeholder = "you@email.com";
+          }
+        });
+      });
+
+      providerButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          form.classList.add("hidden");
+          success.classList.remove("hidden");
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>The Collection — Curated Second Homes | Per Square Feet</title>
+  <meta name="description" content="Browse a curated collection of verified villas, farmhouses and mountain residences across Uttarakhand, Himachal, Haryana and Rajasthan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body data-page="properties">
+  <a href="#main" class="eyebrow skip-link sr-only">Skip to content</a>
+
+  <header class="site-header" data-site-header data-over-hero="true">
+    <div class="nav-row">
+      <a href="../index.html" class="brand eyebrow">Per Square Feet</a>
+      <nav aria-label="Primary" class="nav-links">
+          <a href="../index.html" class="eyebrow link-underline" data-nav-link="home">Home</a>
+          <a href="../properties/index.html" class="eyebrow link-underline is-active" data-nav-link="properties">Properties</a>
+          <a href="../neighbourhoods/index.html" class="eyebrow link-underline" data-nav-link="neighbourhoods">Neighbourhoods</a>
+          <a href="../investment.html" class="eyebrow link-underline" data-nav-link="investment">Investment</a>
+          <a href="../ai-lifestyle.html" class="eyebrow link-underline" data-nav-link="ai-lifestyle">AI Lifestyle</a>
+          <a href="../about.html" class="eyebrow link-underline" data-nav-link="about">About</a>
+      </nav>
+      <div class="nav-secondary">
+          <a href="../signin.html" class="eyebrow link-underline" data-nav-link="signin">Sign in</a>
+          <a href="../saved.html" class="eyebrow link-underline" data-nav-link="saved">Saved<span data-saved-count></span></a>
+          <a href="../contact.html" class="eyebrow link-underline" data-nav-link="contact">Contact</a>
+      </div>
+      <button type="button" class="mobile-toggle" data-mobile-toggle aria-label="Menu">Menu</button>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <nav aria-label="Mobile">
+            <a href="../index.html" class="eyebrow" data-nav-link="home">Home</a>
+            <a href="../properties/index.html" class="eyebrow" data-nav-link="properties">Properties</a>
+            <a href="../neighbourhoods/index.html" class="eyebrow" data-nav-link="neighbourhoods">Neighbourhoods</a>
+            <a href="../investment.html" class="eyebrow" data-nav-link="investment">Investment</a>
+            <a href="../ai-lifestyle.html" class="eyebrow" data-nav-link="ai-lifestyle">AI Lifestyle</a>
+            <a href="../about.html" class="eyebrow" data-nav-link="about">About</a>
+            <a href="../signin.html" class="eyebrow" data-nav-link="signin">Sign in</a>
+            <a href="../saved.html" class="eyebrow" data-nav-link="saved">Saved</a>
+            <a href="../contact.html" class="eyebrow" data-nav-link="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero-dark" style="padding-bottom:4rem;">
+      <div class="shell">
+        <p class="eyebrow text-light" data-listing-eyebrow>The collection</p>
+        <h1 class="display-lg" style="max-width:36rem;">Find your place.</h1>
+
+        <div class="search-row">
+          <label class="eyebrow" for="psf-search" style="display:block;color:color-mix(in oklch, var(--primary-foreground) 60%, transparent);">What are you looking for?</label>
+          <div class="search-row-inner">
+            <input id="psf-search" data-listing-search placeholder="A private mountain villa under ₹5 Cr for weekend escapes." />
+            
+          </div>
+          <button type="button" class="eyebrow link-underline hidden" data-listing-clear-collection style="margin-top:1.5rem;color:color-mix(in oklch, var(--primary-foreground) 70%, transparent);">Clear collection</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell" style="padding-top:3.5rem;padding-bottom:3.5rem;">
+      <div class="results-bar">
+        <div style="display:flex;align-items:center;gap:1rem;">
+          <p class="eyebrow text-gold">Destinations</p>
+          <select class="field" data-listing-location style="min-width:12rem;">
+            <option value="">All destinations</option>
+          </select>
+        </div>
+        <p class="eyebrow text-muted" data-listing-count>0 residences</p>
+      </div>
+
+      <div class="hairline-top" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:1.5rem;padding:2rem 0 1.5rem;">
+        <div class="sort-row">
+          <span class="eyebrow text-muted">Sort</span>
+          <button type="button" class="sort-btn link-underline is-active" data-listing-sort="Curated">Curated</button>
+          <button type="button" class="sort-btn link-underline" data-listing-sort="New">New</button>
+          <button type="button" class="sort-btn link-underline" data-listing-sort="Price">Price</button>
+          <button type="button" class="sort-btn link-underline" data-listing-sort="Most viewed">Most viewed</button>
+          <button type="button" class="sort-btn link-underline" data-listing-sort="Best match">Best match</button>
+        </div>
+      </div>
+
+      <div class="filters-panel is-open" data-listing-filters>
+        <label class="block">
+          <span class="eyebrow text-muted">Price</span>
+          <select class="field" data-listing-band>
+            <option value="0">Any</option>
+            <option value="1">₹2–3 Cr</option>
+            <option value="2">₹3–5 Cr</option>
+            <option value="3">₹5–10 Cr</option>
+            <option value="4">₹10 Cr+</option>
+          </select>
+        </label>
+        <label class="block">
+          <span class="eyebrow text-muted">Property type</span>
+          <select class="field" data-listing-type><option value="Any">Any</option></select>
+        </label>
+        <label class="block">
+          <span class="eyebrow text-muted">Bedrooms</span>
+          <select class="field" data-listing-bedrooms>
+            <option value="0">Any</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+          </select>
+        </label>
+        <label class="block">
+          <span class="eyebrow text-muted">Status</span>
+          <select class="field" data-listing-status>
+            <option>Any</option><option>Ready</option><option>Under Construction</option>
+          </select>
+        </label>
+        <div class="lifestyle-col">
+          <span class="eyebrow text-muted">Lifestyle</span>
+          <div style="margin-top:.75rem;display:flex;flex-wrap:wrap;gap:.5rem;" data-listing-lifestyle-facets></div>
+        </div>
+        <label style="display:flex;align-items:center;gap:.75rem;align-self:end;">
+          <input type="checkbox" data-listing-verified-only style="accent-color:var(--gold);height:.875rem;width:.875rem;" />
+          <span class="eyebrow text-muted">Verified only</span>
+        </label>
+      </div>
+
+      <div data-listing-no-results class="no-results hidden">
+        <h2 class="display-md">Nothing matches — yet.</h2>
+        <p class="body-lede">Adjust your refinements, or let an advisor search on your behalf.</p>
+      </div>
+
+      <div class="grid-3" style="margin-top:4rem;" data-listing-grid></div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div>
+          <p class="eyebrow">Per Square Feet</p>
+          <p class="footer-tagline">Curated second homes.<br />Considered ownership.</p>
+        </div>
+        <nav aria-label="Explore" class="footer-links">
+            <a href="../properties/index.html">Properties</a>
+            <a href="../neighbourhoods/index.html">Neighbourhoods</a>
+            <a href="../investment.html">Investment</a>
+            <a href="../ai-lifestyle.html">AI Lifestyle</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../owner-community.html">Owner Community</a>
+        </nav>
+        <div class="footer-links">
+        
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Per Square Feet</p>
+        <div class="footer-bottom-links">
+          <span>Privacy</span>
+          <span>Terms</span>
+          <span>Disclaimer</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/site-data.js"></script>
+  <script src="../js/saved.js"></script>
+  <script src="../js/property-card.js"></script>
+  <script src="../js/reveal.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/properties-listing.js"></script>
+
+</body>
+</html>

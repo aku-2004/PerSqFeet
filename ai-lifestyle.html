@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>AI Lifestyle Matching — Your Oasis Profile | Per Square Feet</title>
+  <meta name="description" content="Answer five questions about how you want to live and receive a personalised shortlist of curated second homes with match reasoning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body data-page="ai-lifestyle">
+  <a href="#main" class="eyebrow skip-link sr-only">Skip to content</a>
+
+  <header class="site-header" data-site-header data-over-hero="true">
+    <div class="nav-row">
+      <a href="index.html" class="brand eyebrow">Per Square Feet</a>
+      <nav aria-label="Primary" class="nav-links">
+          <a href="index.html" class="eyebrow link-underline" data-nav-link="home">Home</a>
+          <a href="properties/index.html" class="eyebrow link-underline" data-nav-link="properties">Properties</a>
+          <a href="neighbourhoods/index.html" class="eyebrow link-underline" data-nav-link="neighbourhoods">Neighbourhoods</a>
+          <a href="investment.html" class="eyebrow link-underline" data-nav-link="investment">Investment</a>
+          <a href="ai-lifestyle.html" class="eyebrow link-underline is-active" data-nav-link="ai-lifestyle">AI Lifestyle</a>
+          <a href="about.html" class="eyebrow link-underline" data-nav-link="about">About</a>
+      </nav>
+      <div class="nav-secondary">
+          <a href="signin.html" class="eyebrow link-underline" data-nav-link="signin">Sign in</a>
+          <a href="saved.html" class="eyebrow link-underline" data-nav-link="saved">Saved<span data-saved-count></span></a>
+          <a href="contact.html" class="eyebrow link-underline" data-nav-link="contact">Contact</a>
+      </div>
+      <button type="button" class="mobile-toggle" data-mobile-toggle aria-label="Menu">Menu</button>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <nav aria-label="Mobile">
+            <a href="index.html" class="eyebrow" data-nav-link="home">Home</a>
+            <a href="properties/index.html" class="eyebrow" data-nav-link="properties">Properties</a>
+            <a href="neighbourhoods/index.html" class="eyebrow" data-nav-link="neighbourhoods">Neighbourhoods</a>
+            <a href="investment.html" class="eyebrow" data-nav-link="investment">Investment</a>
+            <a href="ai-lifestyle.html" class="eyebrow" data-nav-link="ai-lifestyle">AI Lifestyle</a>
+            <a href="about.html" class="eyebrow" data-nav-link="about">About</a>
+            <a href="signin.html" class="eyebrow" data-nav-link="signin">Sign in</a>
+            <a href="saved.html" class="eyebrow" data-nav-link="saved">Saved</a>
+            <a href="contact.html" class="eyebrow" data-nav-link="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero-dark">
+      <div class="shell">
+        <p class="eyebrow text-light">AI lifestyle</p>
+        <h1 class="display-lg" style="max-width:36rem;">Tell us how<br />you want to live.</h1>
+        <p style="margin-top:2rem;max-width:28rem;color:color-mix(in oklch, var(--primary-foreground) 70%, transparent);">
+          Five questions. A lifestyle profile. A shortlist selected around it.
+        </p>
+      </div>
+    </section>
+
+    <div class="shell section-lg">
+      <!-- quiz -->
+      <div id="quiz-view" style="max-width:48rem;margin:0 auto;">
+        <div class="progress-row" data-quiz-progress></div>
+        <p class="eyebrow text-muted" style="margin-top:1.5rem;" data-quiz-step-count>01 / 05</p>
+
+        <div class="quiz-step" data-quiz-step>
+          <h2 class="display-lg" data-quiz-question></h2>
+          <div class="quiz-options" data-quiz-options></div>
+          <div class="quiz-nav">
+            <button type="button" class="eyebrow link-underline hidden" data-quiz-back>Back</button>
+            <button type="button" class="btn-base btn-solid hidden" data-quiz-finish>Build my shortlist</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- results -->
+      <div id="results-view" class="hidden">
+        <div class="calc-grid" style="padding-top:0;">
+          <div class="result-profile">
+            <p class="eyebrow text-gold">Your oasis profile</p>
+            <h2 class="display-lg" data-result-profile style="margin-top:1.5rem;"></h2>
+            <p class="result-match-score" data-result-score></p>
+            <span class="gold-rule" style="margin-top:2rem;"></span>
+            <dl class="result-answers" data-result-answers></dl>
+            <div style="margin-top:2.5rem;display:flex;flex-wrap:wrap;gap:1rem;">
+              <button type="button" class="btn-base btn-outline" data-quiz-restart>Refine answers</button>
+              <a href="contact.html" class="btn-base btn-solid">Speak to an advisor</a>
+            </div>
+            <p style="margin-top:2rem;font-size:.75rem;color:var(--muted-foreground);">Sample matching logic on illustrative inventory.</p>
+          </div>
+          <ol style="display:flex;flex-direction:column;gap:3.5rem;" data-result-list></ol>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div>
+          <p class="eyebrow">Per Square Feet</p>
+          <p class="footer-tagline">Curated second homes.<br />Considered ownership.</p>
+        </div>
+        <nav aria-label="Explore" class="footer-links">
+            <a href="properties/index.html">Properties</a>
+            <a href="neighbourhoods/index.html">Neighbourhoods</a>
+            <a href="investment.html">Investment</a>
+            <a href="ai-lifestyle.html">AI Lifestyle</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="owner-community.html">Owner Community</a>
+        </nav>
+        <div class="footer-links">
+    
+      
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Per Square Feet</p>
+        <div class="footer-bottom-links">
+          <span>Privacy</span>
+          <span>Terms</span>
+          <span>Disclaimer</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/site-data.js"></script>
+  <script src="js/saved.js"></script>
+  <script src="js/property-card.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/ai-lifestyle.js"></script>
+
+</body>
+</html>
